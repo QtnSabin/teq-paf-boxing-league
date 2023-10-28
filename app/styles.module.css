@@ -1,0 +1,96 @@
+.firstPage {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.firstPageContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 50px;
+}
+
+.backgroundImage {
+  height: 100%;
+  background-image: url('/images/boxing-background-3.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  position: absolute;
+}
+
+.skullsLogoContainer {
+  position: relative;
+  display: flex;
+  width: 30vw;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 100px;
+  margin-left: 80px;
+}
+
+@media screen and (max-width: 900px){
+  .skullsLogoContainer {
+    margin-left: 30px;
+  }
+}
+
+.skullsLogoContainer img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.skullsBoxingLeagueContainer {
+  position: relative;
+  display: flex;
+  width: 45vw;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.skullsBoxingLeagueContainer img {
+  width: 100%;
+}
+
+.skullsBoxingLeagueContainer .presentationText {
+  width: 100%;
+  padding-top: 50px;
+  color: var(--primaryWhite);
+  text-align: end;
+  text-shadow: 1px 1px 2px #000;
+  font-size: large;
+}
+
+.skullsBoxingLeagueContainer .presentationText span{
+  color: var(--primaryWhite);
+  border-bottom: 1px solid var(--primaryRed);
+  padding-bottom: 3px;
+}
+
+.skullsBoxingLeagueContainer button {
+  align-self: flex-end;
+  margin-top: 40px;
+  font-size: 16px;
+}
+
+.transitionPattern {
+  position: absolute;
+  bottom: -60px;
+  height: 100%;
+  background-color: var(--primaryRed);
+  -webkit-clip-path: polygon(0 82%, 53% 82%, 75% 100%, 0% 100%);
+  clip-path: polygon(0 82%, 53% 82%, 75% 100%, 0% 100%);
+  padding-top: 50%;
+}
+
+.secondPage {
+  padding-top: 50px;
+  padding-bottom: 40px;
+}

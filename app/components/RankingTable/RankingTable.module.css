@@ -1,0 +1,17 @@
+.tableBody tr {
+  height: 60px;
+}
+
+.tableBody tr td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.profilCell {
+  display: flex;
+  align-items: center;
+}
+
+.historyCell div {
+  border-radius: 3px;
+}

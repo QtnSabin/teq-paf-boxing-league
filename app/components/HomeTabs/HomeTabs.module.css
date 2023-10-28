@@ -1,0 +1,20 @@
+.TabsTrigger {
+  margin-right: 5px;
+  margin-left: 5px;
+  border-bottom: 1px solid var(--primaryWhite);
+  border-radius: 0px;
+  color: var(--secondaryBlack);
+  font-size: medium;
+}
+
+.TabsTrigger:hover {
+  border-bottom: 1px solid var(--primaryGray);
+}
+
+.TabsTrigger[data-state='active'] {
+  border-bottom: 1px solid var(--secondaryBlack);
+}
+
+.Accordion :last-child {
+  border: none
+}
