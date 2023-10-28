@@ -4,9 +4,6 @@ import HomeTabs from './components/HomeTabs/HomeTabs'
 import styles from './styles.module.css'
 import classNames from 'classnames'
 import { Button } from '@/components/ui/button'
-import { Sheet, SheetClose, SheetContent, SheetDescription, SheetFooter, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
-import { Label } from '@/components/ui/label'
-import { Input } from '@/components/ui/input'
 
 export const dynamic = 'force-dynamic'
 

@@ -123,7 +123,7 @@ export default function HomeTabs() {
 
   return (
     <Tabs defaultValue="ranks" className="w-[90%]">
-      <TabsList className={classNames(styles.TabsList, "grid w-full grid-cols-4")}>
+      <TabsList className={classNames(styles.TabsList, "grid w-full grid-cols-4 pb-12")}>
         <TabsTrigger className={styles.TabsTrigger} value="ranks">Classement</TabsTrigger>
         <TabsTrigger className={styles.TabsTrigger} value="informations">Informations</TabsTrigger>
         <TabsTrigger className={styles.TabsTrigger} value="programme">Programmation</TabsTrigger>
