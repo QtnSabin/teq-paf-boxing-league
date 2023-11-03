@@ -1,12 +1,10 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
-import { Label } from '@/components/ui/label'
-import { Input } from '@/components/ui/input'
-import { Button } from '@/components/ui/button'
-import RankingTable, { RankingTableProps } from '../RankingTable/RankingTable'
 import classNames from 'classnames'
 import styles from './HomeTabs.module.css';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
+import RankingTable, { RankingTableProps } from './components/RankingTable/RankingTable';
+import InformationsTab from './components/InformationsTab/InformationTab';
 
 
 export default function HomeTabs() {
@@ -135,42 +133,7 @@ export default function HomeTabs() {
         </Card>
       </TabsContent>
       <TabsContent value="informations">
-        <Card>
-          <CardContent className='pb-0'>
-            <Accordion type="single" collapsible className={styles.Accordion}>
-              <AccordionItem value="item-1">
-                <AccordionTrigger>La Skulls Boxing League</AccordionTrigger>
-                <AccordionContent>
-                  Prochainement
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-2">
-                <AccordionTrigger>Les combats</AccordionTrigger>
-                <AccordionContent>
-                  Prochainement
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-3">
-                <AccordionTrigger>Comment s'inscrire pour combattre ?</AccordionTrigger>
-                <AccordionContent>
-                  Prochainement
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-4">
-                <AccordionTrigger>Le classement</AccordionTrigger>
-                <AccordionContent>
-                  Prochainement
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-5">
-                <AccordionTrigger>La rémunération</AccordionTrigger>
-                <AccordionContent>
-                  Prochainement
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion>
-          </CardContent>
-        </Card>
+        <InformationsTab></InformationsTab>
       </TabsContent>
       <TabsContent value="programme">
         <Card className='h-[200px] w-full'>

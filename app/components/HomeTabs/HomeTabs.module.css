@@ -4,17 +4,16 @@
   border-bottom: 1px solid var(--primaryWhite);
   border-radius: 0px;
   color: var(--secondaryBlack);
-  font-size: medium;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .TabsTrigger:hover {
-  border-bottom: 1px solid var(--primaryGray);
+  border-bottom: 4px solid var(--primaryGray);
 }
 
 .TabsTrigger[data-state='active'] {
-  border-bottom: 1px solid var(--secondaryBlack);
-}
-
-.Accordion :last-child {
-  border: none
+  border-bottom: 4px solid var(--primaryRed);
+  border-radius: 2px;
+  box-shadow: none;
 }

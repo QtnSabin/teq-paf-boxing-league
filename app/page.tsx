@@ -4,6 +4,7 @@ import HomeTabs from './components/HomeTabs/HomeTabs'
 import styles from './styles.module.css'
 import classNames from 'classnames'
 import { Button } from '@/components/ui/button'
+import SponsorsCarousel from './components/SponsorsCarousel/SponsorsCarousel'
 
 export const dynamic = 'force-dynamic'
 
@@ -69,6 +70,7 @@ export default async function Index() {
       <div className={classNames(styles.secondPage, "w-full", "flex", "justify-center")}>
         <HomeTabs />
       </div>
+      <SponsorsCarousel></SponsorsCarousel>
     </>
   )
 }

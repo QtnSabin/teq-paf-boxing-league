@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+/********* Fonts Face CSS End **********/
+
+/******* Common Element CSS Start ******/
+.gameSection * {
+  margin: 0px;
+  padding: 0px;
+}
+body .gameSection {
+  font-size: 16px;
+}
+.clear {
+  clear: both;
+}
+.gameSection img {
+  max-width: 100%;
+  border: 0px;
+}
+.gameSection ul, .gameSection ol {
+  list-style: none;
+}
+.gameSection a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+.gameSection a:focus,
+.gameSection a:active,
+.gameSection a:visited,
+.gameSection a:hover {
+  text-decoration: none;
+  outline: none;
+}
+.gameSection a:hover {
+  color: #e73700;
+}
+.gameSection h2 {
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+  position: relative;
+}
+.gameSection h3 {
+  margin: 0 0 10px;
+  font-size: 28px;
+  line-height: 36px;
+}
+.gameSection button {
+  outline: none !important;
+}
+/******* Common Element CSS End *********/
+
+/* -------- title style ------- */
+.lineTitle {
+  position: relative;
+  width: 400px;
+}
+.lineTitle::before,
+.lineTitle::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  border-radius: 2px;
+}
+.lineTitle::after {
+  width: 60px;
+  background: var(--primaryRed);
+}
+
+/******* Middle section CSS Start ******/
+/* -------- Landing page ------- */
+
+.gameSection {
+  width: 90%;
+  padding: 30px 0;
+}
+.gameSection .owlTheme {
+  margin: 15px 0;
+  display: flex;
+  display: -webkit-flex;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.gameSection .item {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0 30px 0 0;
+  min-width: 320px;
+  height: 400px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+  background: #343434 no-repeat center center / cover;
+  border-radius: 0.5rem;
+  /* overflow: hidden; */
+  /* animation-duration: 2s;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out; */
+  cursor: pointer;
+}
+
+.sponsorContainer {
+  position: relative;
+  min-width: 350px;
+  height: 400px;
+  transition-duration: 0.5s;
+}
+
+.sponsorContainer.active {
+  min-width: 500px;
+  transition-delay: 0.05s;
+}
+
+.animated {
+  min-width: 0px;
+}
+
+.gameSection .itemDesc {
+  padding: 0 24px 12px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transform: translateY(calc(100% - 54px));
+  -webkit-transform: translateY(calc(100% - 54px));
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
