@@ -46,19 +46,20 @@
 .skullsBoxingLeagueContainer {
   position: relative;
   display: flex;
-  width: 45vw;
-  align-items: center;
+  width: 70vw;
+  align-items: flex-end;
   justify-content: center;
   display: flex;
   flex-direction: column;
 }
 
 .skullsBoxingLeagueContainer img {
-  width: 100%;
+  min-width: 100%;
 }
 
 .skullsBoxingLeagueContainer .presentationText {
-  width: 100%;
+  width: 80%;
+  padding-left: 100px;
   padding-top: 50px;
   color: var(--primaryWhite);
   text-align: end;

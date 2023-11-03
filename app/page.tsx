@@ -21,10 +21,10 @@ export default async function Index() {
         <div className={classNames(styles.backgroundImage, "w-full")} />
         <div className={styles.firstPageContainer}>
           <div className={styles.skullsLogoContainer}>
-            <img src='/images/skulls-logo.png'></img>
+            {/* <img src='/images/skulls-logo.png'></img> */}
           </div>
           <div className={styles.skullsBoxingLeagueContainer}>
-            <img src='/images/Skulls-2.svg'></img>
+            <img src='/images/tequila_2.svg'></img>
             <p className={styles.presentationText}>
               Découvrez l'adrénaline pure et la passion du noble art avec notre ligue de boxe ! Que vous soyez débutant ou champion confirmé, notre communauté accueille tous les amoureux de la boxe. <br></br><span>Êtes-vous prêt à relever le défi ?</span>
             </p>
