@@ -5,7 +5,7 @@ import classNames from 'classnames'
 import { useRef, useEffect, useState } from 'react';
 
 export default function SponsorsCarousel() {
-  const scroller = useRef<HTMLElement>(null)
+  const scroller = useRef<any>(null)
 
   const sponsors = [
     {
