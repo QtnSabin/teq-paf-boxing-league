@@ -17,3 +17,8 @@
   border-radius: 2px;
   box-shadow: none;
 }
+
+.RankingTableCard {
+  max-height: 648px;
+  overflow: auto;
+}

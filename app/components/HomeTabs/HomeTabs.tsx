@@ -13,6 +13,11 @@ export default function HomeTabs() {
       status: "DOWN",
       displayName: "Rhys Everhart",
       surname: "Le surfeur",
+      sponsor: {
+        name: "Tequi-la-la",
+        bgColor: "#F1C31B",
+        isLight: true
+      },
       history: {
         win: 1,
         loss: 1,
@@ -117,6 +122,78 @@ export default function HomeTabs() {
       cashprize: '$150',
       points: 21,
     },
+    {
+      status: "UP",
+      displayName: "Rhys Everhart",
+      surname: "Le surfeur",
+      history: {
+        win: 1,
+        loss: 1,
+        draw: 1
+      },
+      cashprize: '$150',
+      points: 21,
+    },
+    {
+      status: "UP",
+      displayName: "Rhys Everhart",
+      surname: "Le surfeur",
+      history: {
+        win: 1,
+        loss: 1,
+        draw: 1
+      },
+      cashprize: '$150',
+      points: 21,
+    },
+    {
+      status: "UP",
+      displayName: "Rhys Everhart",
+      surname: "Le surfeur",
+      history: {
+        win: 1,
+        loss: 1,
+        draw: 1
+      },
+      cashprize: '$150',
+      points: 21,
+    },
+    {
+      status: "UP",
+      displayName: "Rhys Everhart",
+      surname: "Le surfeur",
+      history: {
+        win: 1,
+        loss: 1,
+        draw: 1
+      },
+      cashprize: '$150',
+      points: 21,
+    },
+    {
+      status: "UP",
+      displayName: "Rhys Everhart",
+      surname: "Le surfeur",
+      history: {
+        win: 1,
+        loss: 1,
+        draw: 1
+      },
+      cashprize: '$150',
+      points: 21,
+    },
+    {
+      status: "UP",
+      displayName: "Rhys Everhart",
+      surname: "Le surfeur",
+      history: {
+        win: 1,
+        loss: 1,
+        draw: 1
+      },
+      cashprize: '$150',
+      points: 21,
+    },
   ]
 
   return (
@@ -128,7 +205,7 @@ export default function HomeTabs() {
         <TabsTrigger className={styles.TabsTrigger} value="about">Qui sommes nous ?</TabsTrigger>
       </TabsList>
       <TabsContent value="ranks">
-        <Card className='overflow-x-hidden overflow-y-hidden'>
+        <Card className={classNames(styles.RankingTableCard, 'overflow-x-hidden', 'overflow-y-hidden')}>
           <RankingTable data={rankingTableData}></RankingTable>
         </Card>
       </TabsContent>

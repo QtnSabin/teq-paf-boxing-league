@@ -1,3 +1,11 @@
 .Accordion :last-child {
   border: none
 }
+
+.AccordionTrigger {
+  font-size: 16px;
+}
+
+.tab {
+  padding-left: 40px;
+}

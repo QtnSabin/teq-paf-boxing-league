@@ -12,6 +12,11 @@ export interface RankingTableProps {
     status: "UP" | "DOWN" | "EQUAL",
     displayName: string,
     surname: string,
+    sponsor?: {
+      name: string,
+      bgColor: string
+      isLight: boolean
+    },
     history: {
       win: number,
       loss: number,
@@ -30,7 +35,7 @@ export default function RankingTable({ data }: RankingTableProps) {
   }
 
   return (
-    <Table>
+    <Table className={styles.Table}>
       <TableHeader className={classnames(styles.tableHeader, 'bg-gray-200')}>
         <TableRow>
           <TableHead className="text-center w-[100px]">Rang</TableHead>
@@ -67,12 +72,11 @@ export default function RankingTable({ data }: RankingTableProps) {
                   {item.displayName}
                 </span>
                 <Badge className="bg-secondaryBlack text-primaryWhite ms-2"># {item.surname}</Badge>
-
+                {item.sponsor && <Badge className={classnames(item.sponsor.isLight ? styles.lightBgColor : null, "text-primaryWhite", "ms-2", "font-bold")} style={{ backgroundColor: item.sponsor.bgColor }}>{item.sponsor.name}</Badge>}
               </div>
             </TableCell>
             <TableCell className="text-center">{item.points}</TableCell>
             <TableCell className={classnames(styles.historyCell, "text-center")}>
-              {/* <p><span className="text-green-600 font-medium">W </span>{item.history.win} | <span className="text-primaryRed font-medium">L </span>{item.history.loss} | <span className="text-blue-500 font-medium">D </span>{item.history.draw}</p></TableCell> */}
               <Badge className="bg-green-600 text-primaryWhite me-1">{item.history.win} W</Badge>
               <Badge className="bg-primaryRed text-primaryWhite me-1">{item.history.loss} L</Badge>
               <Badge className="bg-blue-500 text-primaryWhite">{item.history.draw} D</Badge>

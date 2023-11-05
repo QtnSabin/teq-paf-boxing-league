@@ -9,23 +9,23 @@ export default function SponsorsCarousel() {
 
   const sponsors = [
     {
-      imageUrl: "url(https://www.yudiz.com/codepen/expandable-animated-card-slider/dota-2.jpg)",
-      name: "Sponsor 1"
+      imageUrl: "url(/images/Tequi-la-la-GTAV.png)",
+      name: "TEQUI-LA-LA"
     },
     {
-      imageUrl: "url(https://www.yudiz.com/codepen/expandable-animated-card-slider/winter-3.jpg)",
+      imageUrl: "url(/images/Tequi-la-la-GTAV.png)",
       name: "Sponsor 2"
     },
     {
-      imageUrl: "url(https://www.yudiz.com/codepen/expandable-animated-card-slider/pubg.jpg)",
+      imageUrl: "url(/images/Tequi-la-la-GTAV.png)",
       name: "Sponsor 3"
     },
     {
-      imageUrl: "url(https://www.yudiz.com/codepen/expandable-animated-card-slider/dota-2.jpg)",
+      imageUrl: "url(/images/Tequi-la-la-GTAV.png)",
       name: "Sponsor 4"
     },
     {
-      imageUrl: "url(https://www.yudiz.com/codepen/expandable-animated-card-slider/dota-2.jpg)",
+      imageUrl: "url(/images/Tequi-la-la-GTAV.png)",
       name: "Sponsor 5"
     }
   ]
