@@ -13,8 +13,8 @@ export default function SponsorsCarousel() {
       name: "TEQUI-LA-LA"
     },
     {
-      imageUrl: "url(/images/Tequi-la-la-GTAV.png)",
-      name: "Sponsor 2"
+      imageUrl: "url(/images/auto-exotic.jpg)",
+      name: "Auto Exotic"
     },
     {
       imageUrl: "url(/images/Tequi-la-la-GTAV.png)",
