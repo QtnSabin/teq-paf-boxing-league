@@ -33,8 +33,6 @@ export default function SponsorsCarousel() {
   useEffect(() => {
     const interval = setInterval(() => {
       if (!scroller.current) return;
-      console.log(scroller.current.children[0].children[0].children[0])
-
       scroller.current.children[1].classList.add(styles.active)
       scroller.current.children[0].classList.remove(styles.active)
       scroller.current.children[0].classList.add(styles.animated)
@@ -61,8 +59,7 @@ export default function SponsorsCarousel() {
             <div className={classNames(styles.item)} style={{ backgroundImage: sponsor.imageUrl }}>
               <div className={styles.itemDesc}>
                 <h3>{sponsor.name}</h3>
-                <p>Dota 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
-                  Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+                <p className='text-transparent'>TEXT QUI SERT JUSTE POUR GARDER L'ANIMATION DU SLIDER PARCE QUE JE SUIS UNE MERDE EN CSS</p>
               </div>
             </div>
           </div>

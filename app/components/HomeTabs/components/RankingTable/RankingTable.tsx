@@ -11,7 +11,7 @@ export interface RankingTableProps {
   data: Array<{
     status: "UP" | "DOWN" | "EQUAL",
     displayName: string,
-    surname: string,
+    surname?: string,
     sponsor?: {
       name: string,
       bgColor: string
@@ -23,7 +23,7 @@ export interface RankingTableProps {
       draw: number
     },
     points: number,
-    cashprize: string,
+    avatarPath?: string,
   }>
 }
 
@@ -32,6 +32,14 @@ export default function RankingTable({ data }: RankingTableProps) {
     if (status === 'UP') return <ChevronUp className="text-green-600"></ChevronUp>
     else if (status === 'DOWN') return <ChevronDown className="text-primaryRed"></ChevronDown>
     else return <Equal className="text-blue-500"></Equal>
+  }
+
+  const getCashPrize = (index: number) => {
+    if (index < 5) return '$15.000';
+    else if (index < 10) return '$12.500';
+    else if (index < 20) return '$10.000';
+    else if (index < 30) return '$7.500';
+    else return '$5.000';
   }
 
   return (
@@ -62,7 +70,7 @@ export default function RankingTable({ data }: RankingTableProps) {
               <div className="flex items-center">
                 <Avatar.Root className={classnames(styles.avatarRoot, 'pe-3')}>
                   <Avatar.Image
-                    src="/images/profils/Rhys-circle.png"
+                    src={item.avatarPath || '/images/profils/default.png'}
                     alt="Image profil"
                     width={45}
                   />
@@ -71,7 +79,7 @@ export default function RankingTable({ data }: RankingTableProps) {
                 <span>
                   {item.displayName}
                 </span>
-                <Badge className="bg-secondaryBlack text-primaryWhite ms-2"># {item.surname}</Badge>
+                {item.surname && <Badge className="bg-secondaryBlack text-primaryWhite ms-2"># {item.surname}</Badge>}
                 {item.sponsor && <Badge className={classnames(item.sponsor.isLight ? styles.lightBgColor : null, "text-primaryWhite", "ms-2", "font-bold")} style={{ backgroundColor: item.sponsor.bgColor }}>{item.sponsor.name}</Badge>}
               </div>
             </TableCell>
@@ -81,7 +89,7 @@ export default function RankingTable({ data }: RankingTableProps) {
               <Badge className="bg-primaryRed text-primaryWhite me-1">{item.history.loss} L</Badge>
               <Badge className="bg-blue-500 text-primaryWhite">{item.history.draw} D</Badge>
             </TableCell>
-            <TableCell className="text-center"><Badge className="bg-gray-200 text-secondaryBlack">{item.cashprize}</Badge></TableCell>
+            <TableCell className="text-center"><Badge className="bg-gray-200 text-secondaryBlack">{getCashPrize(index)}</Badge></TableCell>
           </TableRow>
         ))
         }

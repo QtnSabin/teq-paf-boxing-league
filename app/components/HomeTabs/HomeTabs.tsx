@@ -23,8 +23,8 @@ export default function HomeTabs() {
         loss: 1,
         draw: 1
       },
-      cashprize: '$5000',
       points: 21,
+      avatarPath: '/images/profils/Rhys-circle.png',
     },
     {
       status: "DOWN",
@@ -35,8 +35,8 @@ export default function HomeTabs() {
         loss: 1,
         draw: 1
       },
-      cashprize: '$150',
       points: 21,
+      avatarPath: '/images/profils/Rhys-circle.png',
     },
     {
       status: "EQUAL",
@@ -47,8 +47,8 @@ export default function HomeTabs() {
         loss: 1,
         draw: 1
       },
-      cashprize: '$150',
       points: 21,
+      avatarPath: '/images/profils/Rhys-circle.png',
     },
     {
       status: "UP",
@@ -59,8 +59,8 @@ export default function HomeTabs() {
         loss: 1,
         draw: 1
       },
-      cashprize: '$150',
       points: 21,
+      avatarPath: '/images/profils/Rhys-circle.png',
     },
     {
       status: "UP",
@@ -71,8 +71,8 @@ export default function HomeTabs() {
         loss: 1,
         draw: 1
       },
-      cashprize: '$150',
       points: 21,
+      avatarPath: '/images/profils/Rhys-circle.png',
     },
     {
       status: "UP",
@@ -83,8 +83,8 @@ export default function HomeTabs() {
         loss: 1,
         draw: 1
       },
-      cashprize: '$150',
       points: 21,
+      avatarPath: '/images/profils/Rhys-circle.png',
     },
     {
       status: "UP",
@@ -95,8 +95,8 @@ export default function HomeTabs() {
         loss: 1,
         draw: 1
       },
-      cashprize: '$150',
       points: 21,
+      avatarPath: '/images/profils/Rhys-circle.png',
     },
     {
       status: "UP",
@@ -107,8 +107,8 @@ export default function HomeTabs() {
         loss: 1,
         draw: 1
       },
-      cashprize: '$150',
       points: 21,
+      avatarPath: '/images/profils/Rhys-circle.png',
     },
     {
       status: "UP",
@@ -119,8 +119,8 @@ export default function HomeTabs() {
         loss: 1,
         draw: 1
       },
-      cashprize: '$150',
       points: 21,
+      avatarPath: '/images/profils/Rhys-circle.png',
     },
     {
       status: "UP",
@@ -131,8 +131,8 @@ export default function HomeTabs() {
         loss: 1,
         draw: 1
       },
-      cashprize: '$150',
       points: 21,
+      avatarPath: '/images/profils/Rhys-circle.png',
     },
     {
       status: "UP",
@@ -143,8 +143,8 @@ export default function HomeTabs() {
         loss: 1,
         draw: 1
       },
-      cashprize: '$150',
       points: 21,
+      avatarPath: '/images/profils/Rhys-circle.png',
     },
     {
       status: "UP",
@@ -155,8 +155,8 @@ export default function HomeTabs() {
         loss: 1,
         draw: 1
       },
-      cashprize: '$150',
       points: 21,
+      avatarPath: '/images/profils/Rhys-circle.png',
     },
     {
       status: "UP",
@@ -167,8 +167,8 @@ export default function HomeTabs() {
         loss: 1,
         draw: 1
       },
-      cashprize: '$150',
       points: 21,
+      avatarPath: '/images/profils/Rhys-circle.png',
     },
     {
       status: "UP",
@@ -179,8 +179,8 @@ export default function HomeTabs() {
         loss: 1,
         draw: 1
       },
-      cashprize: '$150',
       points: 21,
+      avatarPath: '/images/profils/Rhys-circle.png',
     },
     {
       status: "UP",
@@ -191,10 +191,25 @@ export default function HomeTabs() {
         loss: 1,
         draw: 1
       },
-      cashprize: '$150',
       points: 21,
+      avatarPath: '/images/profils/Rhys-circle.png',
     },
   ]
+
+  for (let index = 0; index < 30; index++) {
+    rankingTableData.unshift({
+      status: "EQUAL",
+      displayName: "MATCHS DE PLACEMENT",
+      surname: "",
+      history: {
+        win: 0,
+        loss: 0,
+        draw: 0
+      },
+      points: 0,
+    },)
+
+  }
 
   return (
     <Tabs defaultValue="ranks" className="w-[90%]">
