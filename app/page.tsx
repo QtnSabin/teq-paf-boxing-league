@@ -5,6 +5,10 @@ import styles from './styles.module.css'
 import classNames from 'classnames'
 import { Button } from '@/components/ui/button'
 import SponsorsCarousel from './components/SponsorsCarousel/SponsorsCarousel'
+import { Sheet, SheetClose, SheetContent, SheetDescription, SheetFooter, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
+import { Label } from '@/components/ui/label'
+import { Input } from '@/components/ui/input'
+import RegisterSheet from './components/RegisterSheet/RegisterSheet'
 
 export const dynamic = 'force-dynamic'
 
@@ -28,39 +32,8 @@ export default async function Index() {
             <p className={styles.presentationText}>
               Découvrez l'adrénaline pure et la passion du noble art avec notre ligue de boxe ! Que vous soyez débutant ou champion confirmé, notre communauté accueille tous les amoureux de la boxe. <br></br><span>Êtes-vous prêt à relever le défi ?</span>
             </p>
-            {/* <Sheet>
-              <SheetTrigger>
-                <Button className='bg-primaryRed text-primaryWhite'>Je participe</Button>
-              </SheetTrigger>
-              <SheetContent>
-                <SheetHeader>
-                  <SheetTitle>Edit profile</SheetTitle>
-                  <SheetDescription>
-                    Make changes to your profile here. Click save when you're done.
-                  </SheetDescription>
-                </SheetHeader>
-                <div className="grid gap-4 py-4">
-                  <div className="grid grid-cols-4 items-center gap-4">
-                    <Label htmlFor="name" className="text-right">
-                      Name
-                    </Label>
-                    <Input id="name" value="Pedro Duarte" className="col-span-3" />
-                  </div>
-                  <div className="grid grid-cols-4 items-center gap-4">
-                    <Label htmlFor="username" className="text-right">
-                      Username
-                    </Label>
-                    <Input id="username" value="@peduarte" className="col-span-3" />
-                  </div>
-                </div>
-                <SheetFooter>
-                  <SheetClose asChild>
-                    <Button type="submit">Save changes</Button>
-                  </SheetClose>
-                </SheetFooter>
-              </SheetContent>
-            </Sheet> */}
-            <Button className='bg-primaryRed text-primaryWhite'>Je participe</Button>
+            <RegisterSheet></RegisterSheet>
+            {/* <Button className='bg-primaryRed text-primaryWhite'>Je participe</Button> */}
           </div>
         </div>
         {/* <div className={classNames(styles.transitionPattern, 'w-full')}>

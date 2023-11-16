@@ -9,25 +9,49 @@ export default function SponsorsCarousel() {
 
   const sponsors = [
     {
-      imageUrl: "url(/images/Tequi-la-la-GTAV.png)",
+      imageUrl: "url(/images/sponsors/tequilala.png)",
       name: "TEQUI-LA-LA"
     },
     {
-      imageUrl: "url(/images/auto-exotic.jpg)",
-      name: "Auto Exotic"
+      imageUrl: "url(/images/sponsors/autoExotic.png)",
+      name: "AUTO EXOTIC"
     },
     {
-      imageUrl: "url(/images/Tequi-la-la-GTAV.png)",
-      name: "Sponsor 3"
+      imageUrl: "url(/images/sponsors/2cent47.png)",
+      name: "2 CENT 47"
     },
     {
-      imageUrl: "url(/images/Tequi-la-la-GTAV.png)",
-      name: "Sponsor 4"
+      imageUrl: "url(/images/sponsors/bahamas.png)",
+      name: "BAHAMAS"
     },
     {
-      imageUrl: "url(/images/Tequi-la-la-GTAV.png)",
-      name: "Sponsor 5"
-    }
+      imageUrl: "url(/images/sponsors/dynasty8.png)",
+      name: "DYNASTY8"
+    },
+    {
+      imageUrl: "url(/images/sponsors/flyWheels.png)",
+      name: "FLY WHEELS"
+    },
+    {
+      imageUrl: "url(/images/sponsors/lspd.png)",
+      name: "LSPD"
+    },
+    {
+      imageUrl: "url(/images/sponsors/luxuryAutos.png)",
+      name: "LUXURY AUTOS"
+    },
+    {
+      imageUrl: "url(/images/sponsors/nsGalaxy.png)",
+      name: "NS GALAXY"
+    },
+    {
+      imageUrl: "url(/images/sponsors/unicorn.png)",
+      name: "UNICORN"
+    },
+    {
+      imageUrl: "url(/images/sponsors/wingstop.png)",
+      name: "WINGSTOP"
+    },
   ]
 
   useEffect(() => {

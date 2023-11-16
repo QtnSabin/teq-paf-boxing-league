@@ -9,7 +9,7 @@ export default function RootLayout({
 
   return (
     <html lang="fr">
-      <body>
+      <body id="body">
         <main className="h-fit bg-primaryWhite flex flex-col items-center">
           {children}
         </main>

@@ -1,0 +1,11 @@
+.fullHeight {
+  height: 100vh;
+}
+
+.alertContainer {
+  height: 100%;
+  margin-top: 20px;
+  padding-bottom: 80px;
+  padding-right: 10px;
+  overflow: auto;
+}
